@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useGameStore } from "../state/useStore";
+import qrWhatsApp from "../../qr-whatsapp.png";
 
 const TRANSFORMATION_STAGES = [
   "Learner",
@@ -101,7 +102,7 @@ export function FinalScene() {
 
           <div className="rounded-[1.5rem] border border-[#00b7ff]/40 bg-[#051320]/90 p-4 md:p-6 shadow-[0_0_40px_rgba(0,183,255,0.35)]">
             <img
-              src="/qr-whatsapp.png"
+              src={qrWhatsApp}
               alt="NexaSoul WhatsApp QR code"
               className="w-40 h-40 md:w-56 md:h-56 object-contain rounded-2xl"
             />
